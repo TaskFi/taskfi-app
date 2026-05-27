@@ -1,0 +1,4 @@
+# SPA fallback — React Router (createBrowserRouter) gère le routage côté client.
+# Sans cette règle, un accès direct à /marketplace, /create-agent, etc.
+# renverrait un 404 Cloudflare.
+/*    /index.html    200

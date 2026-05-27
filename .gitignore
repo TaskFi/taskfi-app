@@ -1,0 +1,9 @@
+node_modules
+dist
+*.local
+
+# Env : VITE_API_URL est défini dans les variables de build Cloudflare Pages,
+# pas commité (le .env local pointe sur localhost).
+.env
+.env.*
+!.env.example

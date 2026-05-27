@@ -1,0 +1,60 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* TASKFI Glassmorphism Background */
+body {
+  background: linear-gradient(135deg, #F4F5FF 0%, #EBEAFE 50%, #F4F5FF 100%);
+  background-attachment: fixed;
+}
+
+/* Decorative background elements for glassmorphism effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(235, 234, 254, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -30%;
+  left: -10%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(255, 158, 128, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom scrollbar styles for a polished look */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
